@@ -1,0 +1,8 @@
+<a href="/tasks">Task Index (this is show.erb)</a>
+
+<h1><%= @task.title %></h1>
+
+<p><%= @task.description %></p>
+<form method="delete" action="/tasks/#{@task.id}"> 
+  <input type="submit" value="Delete Task"/> 
+</form> 
